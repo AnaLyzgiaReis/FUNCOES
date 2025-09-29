@@ -1,4 +1,3 @@
-
 function soma (n1, n2){
     return n1+n2
 }
@@ -12,7 +11,7 @@ function divisao (a, b){
     if(b != 0){
         return a/b
     }else{
-        alert("erro, divisao por 0 sua anta")
+        alert("Erro, vc tentou dividir por zero! :0")
         return
     }
 }
@@ -34,7 +33,7 @@ function oper(num1, num2, ope){
 function menu(){
     let op = 0 
 do {
-    op = prompt(`Calculadora
+    op = prompt(`Calculadora :3
         1 soma
         2 subtração
         3 multiplicação
@@ -42,12 +41,12 @@ do {
         0 sair`)
 
         if (op >=1 && op <5){
-                let n1 = parseFloat(prompt("numero 1"))
-                let n2 = parseFloat(prompt("numero 2"))
+                let n1 = parseFloat(prompt("Número 1"))
+                let n2 = parseFloat(prompt("Número 2"))
                 let resultado = oper (n1, n2, op)
                 alert("o result eh: "+ resultado)  
                 if(resultado)
-                    alert("seu result eh: "+ resultado)
+                    alert("Seu resultado é: "+ resultado)
         }
         
 }while(op != 0)
@@ -57,4 +56,5 @@ do {
 
 
 }
+
 menu ()
